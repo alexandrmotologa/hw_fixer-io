@@ -48,7 +48,7 @@ def disp():
     print("\n")
     print(f"EUR:  [{a:^12}]")
     print(f"MDL:  [{round(mdl, 4):^12}] ")
-    print(f"USD:  [{round(usd * 1 / 1, 4):^12}]")
+    print(f"USD:  [{round(usd, 4):^12}]")
     print(f"RUB:  [{round(rub, 4):^12}]")
 
 
