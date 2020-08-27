@@ -1,0 +1,25 @@
+hw1:
+distribuiti logica sub forma de functii,
+    de ex: getDataFromFixer()
+           getDataFromCache()
+hw1: done
+
+
+
+
+
+
+hw2:
+faceti urmatorul menu interactiv: MDL RUB EUR USD
+1: converteste,
+introdu suma si valuta < 1000 MDL
+alege in ce sa fie transformat, de ex EUR
+menu sa fie mereu in lucru
+2: afiseaza rata pentru valuta data
+introdu valuta MDL
+introdu data 2020-01-01
+3*: afiseaza istoria ratelor
+introdu valuta: MDL
+introdu perioada : 2020-01-01 .. 2020-02-02
+
+hw3: adaugati sursa bnm.md XML
