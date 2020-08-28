@@ -5,19 +5,25 @@ distribuiti logica sub forma de functii,
 hw1: done
 
 
-
-
-
-
 hw2:
 faceti urmatorul menu interactiv: MDL RUB EUR USD
 1: converteste,
 introdu suma si valuta < 1000 MDL
 alege in ce sa fie transformat, de ex EUR
 menu sa fie mereu in lucru
+
+done
+
 2: afiseaza rata pentru valuta data
 introdu valuta MDL
 introdu data 2020-01-01
+
+modificat, apar toate valutele la cerinta
+done
+
+
+hw2:
+
 3*: afiseaza istoria ratelor
 introdu valuta: MDL
 introdu perioada : 2020-01-01 .. 2020-02-02
