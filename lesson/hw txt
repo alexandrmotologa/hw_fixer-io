@@ -18,7 +18,6 @@ done
 introdu valuta MDL
 introdu data 2020-01-01
 
-modificat, apar toate valutele la cerinta
 done
 
 
@@ -27,5 +26,9 @@ hw2:
 3*: afiseaza istoria ratelor
 introdu valuta: MDL
 introdu perioada : 2020-01-01 .. 2020-02-02
+
+
+done
+
 
 hw3: adaugati sursa bnm.md XML
