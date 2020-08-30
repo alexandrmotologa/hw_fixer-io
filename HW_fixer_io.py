@@ -69,8 +69,8 @@ tr, data = new_file(yymm())
 
 def convert(your_money, your_val, our_val):
     exch = your_money * tr[your_val]['to'][our_val]
-
-    return round(exch, 3)
+    print("Suma spre primire: ", end="")
+    return round(exch, 2)
 
 
 # DISPLAY / OPTION_2
@@ -93,7 +93,8 @@ def option_3(val):
     new_file(yymm(y))
     tr3 = transform_rates(data['rates'])
     pr_tr3 = tr3['EUR']['to'][val]
-    print(pr_tr3)
+    print(f"{val} la data de {y[0]}-{y[1]}-{y[2]} valora : ", end="")
+    print(round(pr_tr3, 4))
 
 
 # OPTION_3 END
@@ -127,6 +128,7 @@ def menu():
         while option != 0:
             print("\n")
             print("%%%%%%%%%% WELCOME TO EXCHANGE APP %%%%%%%%%%")
+            print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
             print("$$$$$ MDL $$$$$ EUR $$$$ USD $$$$$ RUB $$$$$")
             print("> 1. EXCHANGE TERMINAL")
             print("> 2. Valuta disponibila")
@@ -138,6 +140,7 @@ def menu():
 
             option = int(input())
             if option == 0:
+                print("##### GOODBYE ##### EXIT ##### GOODBYE #####")
                 exit()
             if option == 1:
                 print(convert(float(input("introduceti suma pentru schimb valutar: ")),
@@ -150,13 +153,13 @@ def menu():
             if option == 4:
                 option_4(input("Introduceti denumirea monedei interesate: ").upper())
     except ValueError:
-        print("ERROR TRY AGAIN")
+        print("##### ERROR ##### TRY AGAIN ##### ERROR #####")
         menu()
     except KeyError:
-        print("ERROR TRY AGAIN")
+        print("##### ERROR ##### TRY AGAIN ##### ERROR #####")
         menu()
     except IndexError:
-        print("ERROR TRY AGAIN")
+        print("##### ERROR ##### TRY AGAIN ##### ERROR #####")
         menu()
 
 menu()
